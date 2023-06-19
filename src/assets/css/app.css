@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.inline-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.img_logo {
+  width: 70px;
+}
+
+.nav-link {
+  position: relative;
+  font-size: 12.33px;
+  color: black;
+
+  transition: 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: rgb(51, 66, 153);
+}
+
+.nav-link:before {
+  transition: 0.3s ease-in-out;
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 5px;
+
+  top: 0;
+  margin-block: -5px;
+}
+
+.nav-link:hover:before {
+  content: " ";
+  position: absolute;
+  width: 120px;
+  height: 5px;
+
+  top: 0;
+  margin-block: -5px;
+
+  border-radius: 5px;
+  background-color: #416dd5;
+}
+.nav-link-item {
+  position: relative;
+  font-size: 12.33px;
+  color: #416dd5;
+
+  transition: 0.3s ease-in-out;
+}
+
+.nav-link-item:before {
+  transition: 0.3s ease-in-out;
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 2px;
+
+  top: 0;
+  margin-block: -5px;
+}
+
+.nav-link-item:hover:before {
+  content: " ";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+
+  top: 0;
+  margin-block: -5px;
+
+  border-radius: 5px;
+  background-color: #416dd5;
+}
+
+.delete-button {
+  margin-block: 40px;
+  padding: 10px;
+
+  border: 1px solid #323232;
+  background-color: #d13838;
+  color: white;
+
+  border-radius: 5px;
+  cursor: pointer;
+
+  transition: 0.3s ease-in-out;
+}
+
+.delete-button:hover {
+  background-color: #e24747;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Roboto Slab", serif;
+
+  scroll-behavior: smooth;
+}
+
+main {
+  margin: 0px auto;
+  width: 1200px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 39.8;
+}
+
+h2 {
+  font-size: 33.2;
+}
+
+h3 {
+  font-size: 27.6;
+}
+
+h4 {
+  font-size: 23;
+}
+
+h5 {
+  font-size: 19.2;
+}
+
+h6 {
+  font-size: 13.3;
+}
+
+table {
+  margin-block: 50px;
+}
+
+.hero {
+  margin-inline: auto;
+  margin-block: 40px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 25px;
+  width: 490px;
+
+  text-align: justify;
+}
+
+.hero h4 {
+  width: 85%;
+  font-weight: 400;
+}
+
+.book-info-container {
+  margin: 0 auto;
+  width: 790px;
+}
+
+/* 
+
+https://media.tenor.com/vDtqjv47FsIAAAAC/book-school.gif*/
+
+.book-info-img {
+  border-radius: 8px;
+  background: url("https://i.pinimg.com/originals/26/e4/e7/26e4e749e7b4858d97c632c16c606aa0.gif")
+    center/contain no-repeat;
+
+  width: 100%;
+  height: 350px;
+
+  filter: grayscale(0.5);
+}
+
+.book-info-title {
+  display: flex;
+  align-items: center;
+
+  margin-block: -18px 20px;
+  gap: 20px;
+}
+
+.book-info-title h2 {
+  color: #323232;
+  font-weight: 400;
+}
+
+.book-info-title h5 {
+  color: #323232;
+  font-weight: 400;
+}
+
+.book-info-description {
+  font-weight: 300;
+  color: #8b8b8b;
+}
+
+@media (max-width: 1095px) {
+  main {
+    width: 1095px;
+  }
+
+  .hero img {
+    width: 90px;
+  }
+}
+
+@media (max-width: 1000px) {
+  main {
+    width: 1000px;
+  }
+
+  .book-info-container {
+    padding: 20px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .book-info-img {
+    width: 100%;
+    height: 350px;
+
+    filter: grayscale(0.5);
+  }
+
+  .book-info-description {
+    width: 100%;
+  }
+}
+
+@media (max-width: 905px) {
+  main {
+    width: 905px;
+  }
+
+  .hero {
+    width: 80%;
+  }
+}
+
+@media (max-width: 822px) {
+  main {
+    width: 822px;
+  }
+}
+
+@media (max-width: 750px) {
+  main {
+    width: 750px;
+  }
+}
+
+@media (max-width: 690px) {
+  main {
+    width: 500px;
+  }
+}
+
+@media (max-width: 500px) {
+  main {
+    margin: 0 auto;
+    width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    margin: 0 auto;
+    width: 380px;
+  }
+}

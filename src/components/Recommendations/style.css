@@ -1,0 +1,87 @@
+.recommendations {
+  margin: 40px auto 0px;
+  width: 948px;
+}
+
+.recommendations small::before {
+  margin-right: 10px;
+  content: " ";
+  background-color: #416dd5;
+
+  padding: 0.5px 9px;
+  border-radius: 100%;
+}
+
+.recommendations-container {
+  padding-block: 20px;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.recommendations-container article {
+  width: 307px;
+  height: 200px;
+
+  background-color: #d9d9d9;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.recommendations-container article:hover {
+  scale: 1.05;
+}
+
+.recommendations-container article:first-child {
+  background: url("https://m.media-amazon.com/images/S/aplus-media/vc/f923e8a1-e56f-4844-9d21-088253c17de9.__CR0,0,970,600_PT0_SX970_V1___.png")
+    center/cover;
+}
+
+.recommendations-container article:nth-child(2) {
+  background: url("https://m.media-amazon.com/images/I/81iSuwAnoPL.jpg")
+    center/cover;
+}
+
+.recommendations-container article:last-child {
+  background: url("https://m.media-amazon.com/images/I/612b45WWEgL.jpg")
+    center/cover;
+}
+
+@media (max-width: 1095px) {
+  .recommendations {
+    width: 80%;
+  }
+
+  .recommendations-container article {
+    width: 280px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 905px) {
+  .recommendations-container article {
+    width: 230px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 822px) {
+  .recommendations-container article {
+    width: 200px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 690px) {
+  .recommendations-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .recommendations-container article {
+    width: 80%;
+    height: 180px;
+  }
+}
