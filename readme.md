@@ -1,10 +1,10 @@
-# ![Logo da empresa](/public/images/logo.png "Pallet Winner") Pallet Winner
+# ![Logo da empresa](/public/logo.png "Book Plus") Book Plusº
 
 ---
 
 Site desenvolvido para o Teste Técnico da **GenesisBanks**.
 
-[Link do projeto](https://snazzy-biscochitos-b850d7.netlify.app/)
+[Link do projeto](https://book-pluss.netlify.app/)
 
 **_Página inicial do site_**
 ![Home do Site](/public/readme/home-page.png "Home do Site")
