@@ -1,4 +1,4 @@
-# ![Logo da empresa](/public/logo.png "Book Plus") Book Plusº
+Book Plusº
 
 ---
 
