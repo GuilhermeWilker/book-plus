@@ -46,7 +46,7 @@ const BookDetails = () => {
           <thead>
             <tr>
               <th>AUTOR</th>
-              <th>NAME</th>
+              <th>TÍTULO</th>
               <th>CATEGORIA</th>
               <th>ANO</th>
             </tr>
