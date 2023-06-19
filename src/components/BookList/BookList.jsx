@@ -1,21 +1,27 @@
 import "./style.css";
-import { useContext, useEffect } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 import { BookDataContext } from "../../context/BookContexts/BookDataContext";
 
 export const BookList = () => {
   const { books } = useContext(BookDataContext);
+  const [legendText, setLegendText] = useState("");
 
   useEffect(() => {
     localStorage.setItem("books", JSON.stringify(books));
+
+    !books || books.length === 0
+      ? setLegendText("Adicione seu livro, para preencher a lista!")
+      : setLegendText("");
   }, [books]);
 
   return (
     <div className="book-list">
-      <h3>Sua lista de livros</h3>
+      <h3>Sua lista de livros </h3>
 
       <table>
+        <small className="legend">{legendText}</small>
         <thead>
           <tr>
             <th>Nº</th>

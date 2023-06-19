@@ -8,6 +8,7 @@ export const FormBook = () => {
     title: "",
     category: "",
     year: "",
+    author: "",
     description: "",
   });
 
